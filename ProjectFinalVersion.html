@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+       <meta charset="UTF-8">
+       <title>Что такое ИИ и как он работает</title>
+       <style>
+       html{
+         background-color: #fffdeb;
+       }
+       h3,h2{
+         background-color: rgb(195, 246, 255);
+         color: black;
+       }
+       body{
+        font-size: 1.7vw;
+        font-family: sans-serif;
+       }
+       td, th{
+         border: solid black 2px;
+       }
+       .za{
+         background-color: rgb(195, 255, 195);
+       }
+       .protiv{ 
+        background-color: rgb(255, 195, 195);
+       }
+       a{
+        color: rgb(102, 102, 102);
+       }
+       a:hover{
+        color: rgb(63, 63, 63);
+       }
+       .testdiv{
+        background-color: rgb(79, 229, 255);
+        text-align: center;
+        height: 30vh;
+        border-radius: 30px;
+        position: relative;
+       }
+       .testdiv p{
+        margin-bottom: auto;
+       }
+       button{
+        border: 7px solid grey;
+        text-align: center;
+        vertical-align: top;
+        width: 45%;
+        min-height: 60%;
+        max-height: 61%;
+        border-radius: 40% 5% 40% 5%;
+        font-size: 1em;
+        background-color: rgb(214, 210, 204);
+       }
+       .knopkaOk{
+         max-height: 35%;
+         min-height: 34%;
+       }
+       button:active{
+        background-color: #fffdeb;
+       }
+       .correct{
+        border-color: green;
+        background-color: aquamarine;
+       }
+       .incorrect{
+        border-color: red;
+        background-color: lightcoral;
+       }
+       .darkfon{
+        display: none;
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.6);
+        align-items: center;
+        justify-content: center;
+       }
+       .soderj{
+        background-color: #fffdeb;
+        padding: 2em;
+        border-radius: 1em;
+        height: 40vh;
+        text-align: center;
+       }
+       .vestest {
+        display: none;
+       }
+       </style>
+  </head>
+  <body>
+<div id="vse">
+    <h2>Искусственный интеллект. Как работает, где применяется, минусы и плюсы</h2>
+    <p>содержание: <ul>
+      <li><a href="#vstuplenie">Вступление</a>  </li>
+      <li><a href="#opredelenie">Что такое ИИ? </a> </li>
+      <li><a href="#neiroset">Искусственный интеллект и нейросеть. Разница</a> </li>
+      <li><a href="#princip">Как работает и обучается ИИ</a> </li>
+      <li><a href="#primenenie">Применение ИИ </a> </li>
+      <li><a href="#argumenty">"За" и "Против" </a> </li>
+      <li><a href="#test">Тест</a> </li>
+      </ul></p>
+    <h3 id="vstuplenie">Вступление</h3>
+    <p>Искусственный интеллект (ИИ) — это не просто технология будущего, а уже часть нашей повседневной жизни. Он помогает распознавать лица, переводить тексты, рекомендовать фильмы и даже управлять автомобилями. Но что стоит за этим понятием? Как машины учатся, принимают решения и взаимодействуют с миром? <br><br> ИИ — это не магия, а результат сложных алгоритмов, данных и человеческого любопытства. Погрузитесь в мир, где технологии учатся думать.</p>
+    <h3 id="opredelenie">Что такое ИИ?</h3>
+    <p>Искусственный интеллект (ИИ) — это область информатики, которая занимается созданием программ и систем, способных выполнять задачи, требующие человеческого интеллекта. Это значит, что ИИ может анализировать информацию, делать выводы, принимать решения, обучаться на опыте и даже общаться с людьми.<br>
+Примеры задач, которые решает ИИ: <br><br>
+- Распознавание речи и текста  <br>
+- Перевод с одного языка на другой  <br>
+- Обработка изображений и видео  <br>
+- Прогнозирование событий (например, погоды или спроса на товары)  <br>
+- Управление роботами и автономными машинами <br><br>  
+
+ИИ может работать по разным принципам: от простых правил до сложных моделей машинного обучения. запрос к нейросети, объясняющий, что от нее требуется, называется "промт".</p> <br>
+  <h3 id="neiroset">Искусственный интеллект и нейросеть. Разница</h3>
+  <p>В последнее время слова "нейросеть" и "искусственный интеллект" стали воспринимать как синонимы, но это не совсем верно. <br>Нейросеть (нейронная сеть) — это один из методов работы ИИ, вдохновлённый работой человеческого мозга. Она состоит из множества «искусственных нейронов», которые связаны между собой и обмениваются данными. Каждый нейрон получает информацию, обрабатывает её и передаёт дальше — как это делают нейроны в мозге.
+<br><br>
+Нейросети особенно хорошо справляются с:
+<ul>
+<li>Распознаванием лиц и объектов   </li>
+<li>Переводом и генерацией текста   </li>
+<li>Созданием изображений, музыки и видео  </li>
+<li> Управлением голосовыми помощниками  </li>
+</ul>
+Нейросеть — это как «мозг» внутри ИИ, который умеет учиться и адаптироваться. </p>
+<h3 id="princip">Как работает и обучается ИИ</h3>
+<p>
+  <ul>
+ <li>Обработка данных: ИИ получает входные данные — текст, изображение, звук или числа.  </li>
+<li> Поиск закономерностей: алгоритмы анализируют эти данные и находят повторяющиеся связи. </li>
+<li> Принятие решений: на основе найденных закономерностей система делает прогноз или выполняет действие.  </li>
+<li> Обратная связь: если результат оказался неверным, алгоритм корректирует внутренние параметры, чтобы в следующий раз быть точнее.  </li>
+
+Пример: если ИИ обучают распознавать рукописные цифры, он получает тысячи картинок с цифрами и правильными ответами. Сначала он ошибается, но постепенно «подстраивает» свои внутренние правила, чтобы угадывать всё лучше. <br><br> Тем не менее, он не застрахован от ошибок. Если в обучающих данных содержалась недостоверная, неточная или неоднозначная информация, алгоритм "впитает" ее, что приведет к неправильным решениям.
+</ul>
+</p>
+<h3 id="primenenie">Применение ИИ</h3>
+<p>На сегодняшний день искусственный интеллект активно внедряется практически повсеместно. Статьи, которые мы читаем, созданы с помощью нейростетей, изображения, прикреплённые к ним, аналогично созданы не человеком. Многие онлайн-платформы для обучения уже внедрили ИИ для проверки заданий, чтобы экономить время учителей. На основе этой технологии компьютер может сам анализировать данные медицинских исследований: КТ, МРТ, рентгена и многих других. Нейросети активно используют в работе автомобилей. В последнее время в автомобили стали добавлять такую функцию как автопилот, основой которого является ИИ. Даже в сервисах просмотра фильмов и сериалов рекомендации нам составляют всё те же алгоритмы. Этот список можно продолжать ещё долго. Исходя из этого можно понять, что искусственный интеллект играет огромную роль в нашей жизни, даже если мы этого не замечаем.
+</p>
+<h3 id="argumenty">"За" и "Против"</h3>
+<p>
+  <table>
+    <tbody>
+       <tr>
+         <th class="za">
+           "За"
+         </th>
+         <th class="protiv">
+           "Против"
+         </th>
+       </tr>
+       <tr>
+         <td class="za">
+        автоматизация рутины
+         </td>
+         <td class="protiv">
+        угроза рабочим местам
+         </td>
+       </tr>
+       <tr>
+         <td class="za">
+        быстрые решения
+         </td>
+         <td class="protiv">
+        риск потери навыков
+         </td>
+       </tr>
+       <tr>
+        <td class="za">
+       отсутсвие коррупции
+        </td>
+        <td class="protiv">
+       нулевая коммуникабельность
+        </td>
+       </tr>
+       <tr>
+        <td class="za">
+       стабильность
+        </td>
+        <td class="protiv">
+       риск потери навыков
+        </td>
+       </tr>
+     </tbody>
+  </table>
+  <br>
+  Как итог, видно, что ИИ - это инструмент человека, а не альтернатива ему. Искусственный интеллект способен принимать прагматичные, но бездушные решения. Он может удешевить производство, но сократит количество рабочих мест. На данной стадии своего развития он не способен заменить человека до конца.
+</p>
+<h3 id="test">Тест</h3>
+<p>Для закрепления материала рекомендуется пройти тест из 9 вопросов</p>
+<button onclick="testirovat()">Вперед!</button>
+<br><br>
+</div>
+<div id="vestest" class="vestest">
+<div class="testdiv">
+  <p>№1. Нейросеть это-...</p><br>
+  <button onclick="otvet(this, false)">Отдельная програма, не связанная с ИИ</button>
+  <button onclick="otvet(this, true)">Метод внутри ИИ</button>
+</div>
+<div class="testdiv">
+  <p>№2. Содание изображения - это задача для...</p><br>
+  <button onclick="otvet(this, false)">ИИ</button>
+  <button onclick="otvet(this, true)">Нейросети</button>
+</div>
+<div class="testdiv">
+  <p>№3. Как обучается искусственный интеллект?</p><br>
+  <button onclick="otvet(this, true)">Самостоятельно, на примерах</button>
+  <button onclick="otvet(this, false)">На основе вносимых корректив</button>
+</div>
+<div class="testdiv">
+  <p>№4.Опасно ли доверить ИИ некое производство целиком?</p><br>
+  <button onclick="otvet(this, true)">Да, опасно</button>
+  <button onclick="otvet(this, false)">Нет, безопасно</button>
+</div>
+<div class="testdiv">
+  <p>№5. Может ли ИИ проанализировать данные КТ или МРТ?</p><br>
+  <button onclick="otvet(this, true)">Да</button>
+  <button onclick="otvet(this, false)">Нет</button>
+</div>
+<div class="testdiv">
+  <p>№6. Какое понятие прямо связяно с ИИ?</p><br>
+  <button onclick="otvet(this, false)">Компиляция</button>
+  <button onclick="otvet(this, true)">Машинное обучение</button>
+</div>
+<div class="testdiv">
+  <p>№7. С чем можно сравнить нейрость?</p><br>
+  <button onclick="otvet(this, true)">С человеческим мозгом</button> 
+  <button onclick="otvet(this, false)">С суперкомпьютером</button>
+</div>
+<div class="testdiv">
+  <p>№8. Как называется запрос к нейросети?</p><br>
+  <button onclick="otvet(this, false)">Команда</button>
+  <button onclick="otvet(this, true)">Промт</button>
+</div>
+<div class="testdiv">
+  <p>№9. Когда ИИ ошибается?</p><br>
+  <button onclick="otvet(this, true)">При неверных обучающих данных</button>
+  <button onclick="otvet(this, false)">При перегрузке сервера</button>
+</div>
+</div>
+<div id="result" class="darkfon">
+  <div class="soderj">
+    <h2>Результаты теста</h2>
+    <p id="resultat"></p>
+    <button onclick="closeW()" id="knopkaOk" class="knopkaOk">OK</button>
+  </div>
+</div>
+<script>
+ let resW = window.innerWidth;
+ let resH = window.innerHeight;
+ let count = 0;
+ let sovet;
+ adaptation();
+ function adaptation(){
+  if (resH>resW){
+      document.body.style.fontSize='1.8vh';
+      document.querySelectorAll("div:not(#sod):not(#result)").forEach (divs => {
+      divs.style.height = '35vw';
+    });
+  };
+ };
+ function otvet(buttonnum, answer){
+   if (answer){
+    buttonnum.className="correct";
+    count++;
+   }
+   else{
+    buttonnum.className="incorrect";
+   }
+   let parent = buttonnum.closest(".testdiv");
+   let buttons = parent.querySelectorAll("button");
+   buttons[0].disabled=true;
+   buttons[1].disabled=true;
+   const allButtons = document.querySelectorAll("button");
+   let colvo = 2;
+   for (let i = 0; i < allButtons.length; i++) {
+    if (allButtons[i].disabled){
+      colvo++
+    }
+   }
+   if (colvo === allButtons.length){
+    setTimeout (() => {
+    const resultat = document.getElementById("resultat");
+    if (count >= 8){
+      sovet = "Вы отлично усвоили материал!";
+    }
+    else if (count >= 5) {
+      sovet = "Неплохо, но стоит повторить материал.";
+    }
+    else if (count <= 4) {
+      sovet = "Вы можете лучше, прочитайте статью заново.";
+    }
+    resultat.textContent = "правильных ответов: " + count + " из 9. " + sovet;
+    document.getElementById("result").style.display = "flex";
+    }, 100);
+   }
+ }
+ function closeW(){
+  console.log("clicked");
+  document.getElementById("result").style.display = "none";
+ }
+ function testirovat(){
+   document.getElementById("vse").style.display='none';
+   document.getElementById("vestest").className="nesushestvuushiyClass";
+   window.scrollTo(0,0);
+ }
+</script>
+  </body>
+</html>
