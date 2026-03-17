@@ -88,6 +88,19 @@
        .vestest {
         display: none;
        }
+       .orientation-warning {
+        display: none;
+       }
+       @media screen and (orientation: landscape) {
+       .main-content {
+        display: none; 
+       }
+       .orientation-warning {
+        display: block; 
+        text-align: center;
+    }
+}
+         
        </style>
   </head>
   <body>
